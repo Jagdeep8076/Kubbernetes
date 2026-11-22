@@ -18,3 +18,11 @@ spec:
                 name: main-server-service
                 port:
                   number: 80
+      
+          - pathType: Prefix
+            path: "/api/product"
+            backend:
+              service:
+                name: product-service
+                port:
+                  number: 80
